@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 50px 20px 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .contact-section {
+            padding: 40px 10%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
+        .contact-card {
+            background-color: rgb(0, 0, 0);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-card img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .contact-card a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+        }
+        /* Back to Home Button */
+        
+        .back {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+        
+        .back a {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 2px solid rgb(243, 13, 13);
+            border-radius: 30px;
+            text-decoration: none;
+            color: rgb(243, 57, 24);
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 1rem;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .back a:hover {
+            background-color: rgb(248, 15, 15);
+            color: rgb(255, 255, 255);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Contact Information 📞</h1>
+        <p class="tagline">Feel free to reach out anytime!</p>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Phone">
+            <p class="contact-info">Phone: 01568770399</p>
+
+        </div>
+
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            <p class="contact-info">Email: <a href="mailto:niher176981@gmail.com">niher176981@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Whatsapp">
+            <p class="contact-info">WhatsApp: 01568770399</p>
+        </div>
+
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            <p class="contact-info">Facebook: <a href="https://www.facebook.com/ni.her.397" target="_blank">Visit Profile</a></p>
+        </div>
+
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+            <p class="contact-info">Instagram: <a href="https://www.instagram.com/nihers_archive" target="_blank">Visit Profile</a></p>
+        </div>
+
+        <div class="contact-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+            <p class="contact-info">LinkedIn: <a href="https://www.linkedin.com/in/niher-ronjon-pramanik-01401b2a8/" target="_blank">Visit Profile</a></p>
+        </div>
+    </section>
+
+    <div class="back">
+        <a href="Home.html">⏪ Back to Home</a>
+    </div>
+
+
+</body>
+
+</html>

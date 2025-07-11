@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates</title>
+    <style>
+        /* General Styles */
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121111;
+            color: #fffcfc;
+            line-height: 1.6;
+        }
+        /* Header Section */
+        
+        .header {
+            background-color: #101111;
+            color: white;
+            text-align: center;
+            padding: 50px 20px 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        /* Certificates Section */
+        
+        .certificates-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 10%;
+        }
+        
+        .certificate-card {
+            background-color: #191818;
+            border-radius: 15px;
+            box-shadow: 0 8px 8px rgb(245, 245, 245);
+            padding: 20px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .certificate-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #fffefe;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .certificate-card h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .certificate-card p {
+            font-size: 1rem;
+            color: #ffffff;
+        }
+        
+        .certificate-card:hover {
+            transform: translateY(-8px);
+        }
+        /* Back to Home Button */
+        
+        .back {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .back a {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 2px solid #ff1919;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #f32828;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 1rem;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .back a:hover {
+            background-color: #cf0e1e;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>My Certificates 🎓</h1>
+        <p class="tagline">Proof of learning and growth</p>
+    </header>
+
+    <section class="certificates-section">
+        <div class="certificate-card">
+            <img src="Screenshot 2025-07-10 at 2.36.02 PM" alt="Certificate 1">
+            <h2>English for University Students</h2>
+            <p>Successfully completed the 'English for University Students' course from Go-Edu and earned a certificate of achievement.</p>
+        </div>
+
+
+        <div class="certificate-card">
+            <img src="cert2.jpg" alt="Certificate 2">
+            <h2>Machine Learning Basics - 2024</h2>
+            <p>Achieved certification in Machine Learning Fundamentals from freeCodeCamp.</p>
+        </div>
+
+        <div class="certificate-card">
+            <img src="cert3.jpg" alt="Certificate 3">
+            <h2>Git & GitHub Essentials - 2023</h2>
+            <p>Certified in Version Control and Collaboration Tools by Udemy.</p>
+        </div>
+
+        <div class="certificate-card">
+            <img src="cert4.jpg" alt="Certificate 4">
+            <h2>Public Speaking - 2022</h2>
+            <p>Earned a Public Speaking workshop completion certificate from my university.</p>
+        </div>
+
+        <!-- Add more certificates below by copying the div above -->
+    </section>
+
+    <div class="back">
+        <a href="Home.html">⏪ Back to Home</a>
+    </div>
+
+</body>
+
+</html>
