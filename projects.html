@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* General Styles */
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #020204;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        /* Header */
+        
+        .header {
+            background-color: #020202;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 50px 20px 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        /* Projects Section */
+        
+        .projects-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 50px 10%;
+        }
+        
+        .project-card {
+            background-color: #000000;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .project-card-content {
+            padding: 20px;
+        }
+        
+        .project-card h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .project-card p {
+            font-size: 1rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        .project-card a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+        /* Back to Home Button */
+        
+        .back {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .back a {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 2px solid #ff1c1c;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #ff1919;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 1rem;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .back a:hover {
+            background-color: #ff2020;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>My Projects 💻</h1>
+        <p class="tagline">Some of my works & contributions</p>
+    </header>
+
+    <section class="projects-section">
+
+
+        <div class="project-card">
+            <img src="images/project1.png" alt="Project 1: Robotics Design & Simulations">
+            <div class="project-card-content">
+                <h2>Project 1: Robotics Design & Simulations</h2>
+                <p>Description: Developed robotic simulations leveraging ROS for [specify functionalities, e.g., navigation, mapping]. This project enabled me to dive deep into robot design principles and work with both hardware and software elements. </p>
+
+                <p>Key Technologies: ROS, Python, C++</p>
+                <a href="https://github.com/niherronjon/Obstacle-Avoiding-Vehicle-Projects" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project2.png" alt="Diary Management System">
+            <div class="project-card-content">
+                <h2>Diary Management System</h2>
+
+                <p>INTRODUCTION : Diary Management System is a software application designed to help users organize and manage daily activities,appointments, events,and tasks efficiently. This proposal outlines the development of a Diary Management System
+                    using the C programming language. The system will provide users with a user-friendly interface to create,edit, and delete entries, set reminders, and manage their schedules effectively..</p>
+
+
+
+                <p>FEATURES : 1. Login Form: ◦ Prompt to enter username. ◦ Prompt to enter password (characters will be masked with ***). 2. Main Menu: ◦ Options to add, view, edit, or delete records. ◦ Option to edit password and exit. 3. Add Record Menu:
+                    ◦ Prompt to enter the date of the record. ◦ Prompt to enter time. ◦ Prompts to enter meeting details (name, place, duration, note). 4. View Record Menu: ◦ Option to view records for the whole day or a specific time. ◦ Prompt to enter
+                    date of the record to be viewed. ◦ Prompt to choose viewing method & display record 5. Edit Record Menu: ◦ Prompt to enter date and time of the record to be edited. ◦ Options to edit various fields like time, meeting person, place,duration,
+                    note. 6. Delete Record Menu: ◦ Option to delete whole record or a record by time. ◦ Prompts to enter date and time of the record to be deleted.Confirmation message after</p>
+
+
+                <p>IMPLEMENTATION PLAN & DURATION : Phase 1: Requirements Gathering (Day 1-2) Phase 2: Design and Planning (Day 3-4) Phase 3: Development (Day 5-8) Phase 4: Testing and Quality Assurance (Day 9-10) Phase 5: Deployment and Maintenance (Day
+                    11-12) </p>
+
+
+
+
+                <P>CONCLUSION : The Diary Management System project aims to provide users with a reliable and efficient solution for organizing their daily schedules and tasks.The system will be lightweight, fast, and compatible with a wide range of platforms.
+                    With a well- defined development plan and the right resources, we are confident in delivering a high-quality product that meets the needs of our users.</P>
+
+
+                <a href="https://github.com/niherronjon/Diary_Management_System_Project/blob/main/Diary_management_systeem_full_code.c" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project3.png" alt="Sleep Analysis Research">
+            <div class="project-card-content">
+                <h2>Sleep Patterns Research</h2>
+                <p>Analyzed student sleep patterns and academic performance using Python, Pandas, and SPSS.</p>
+                <a href="https://github.com/yourusername/sleep-analysis" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Add More Projects Below -->
+
+    </section>
+
+    <div class="back">
+        <a href="Home.html">⏪ Back to Home</a>
+    </div>
+
+</body>
+
+
+</html

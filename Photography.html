@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography</title>
+    <style>
+        /* General Styles */
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #fffdfd;
+            line-height: 1.6;
+        }
+        /* Header Section */
+        
+        .header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 50px 20px 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        /* Gallery Section */
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 40px 10%;
+        }
+        
+        .gallery img,
+        .gallery video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover,
+        .gallery video:hover {
+            transform: scale(1.05);
+        }
+        /* Back to Home Button */
+        
+        .back {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+        
+        .back a {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 2px solid #ff2d2d;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #ff2424;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 1rem;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .back a:hover {
+            background-color: #ff3131;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>My Photography And Videography 📷</h1>
+        <p class="tagline">Capturing the world through my lens</p>
+    </header>
+
+    <section class="gallery">
+        <!-- Example Images -->
+        <img src="IMG_20240819_131759.jpg" alt="Photography 3">
+        <img src="IMG_20240820_154316.jpg" alt="Photography 2">
+        <img src="IMG_20220811_224515.jpg" alt="Photography 3">
+        <img src="vhg" alt="Photography 1">
+        <img src="vbfg" alt="Photography 2">
+        <img src="fgf" alt="Photography 3">
+        <img src="ghgf" alt="Photography 2">
+        <img src="ghg" alt="Photography 3">
+        <img src="gfgf" alt="Photography 2">
+
+
+
+
+
+        <img src="gh" alt="Photography 3">
+        <img src="ghg" alt="Photography 2">
+        <img src="ghgf" alt="Photography 3">
+
+
+        <!-- Example Videos -->
+        <video controls>
+            <source src="IMG_2560.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+            <source src="videos/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Add more images or videos below -->
+    </section>
+
+    <div class="back">
+        <a href="Home.html">⏪ Back to Home</a>
+    </div>
+
+</body>
+
+</html>
