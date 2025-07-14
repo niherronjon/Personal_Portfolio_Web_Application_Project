@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <style>
+        /* Body Styling */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Welcome Text Animation */
+        
+        .welcome-text {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(270deg, #ff4d4d, #4dff4d, #4d4dff, #ff4d4d);
+            background-size: 800% 800%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animateText 5s linear infinite;
+            margin-bottom: 60px;
+        }
+        
+        @keyframes animateText {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        /* Home Button Styling */
+        
+        .home-box {
+            border: 2px solid #00ccff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background-color: transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 8px rgb(255, 255, 255);
+        }
+        
+        .home-box a {
+            color: #00ccff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .home-box:hover {
+            background-color: #00ccff;
+        }
+        
+        .home-box:hover a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="welcome-text">
+        Welcome to My Portfolio 🙋🏻‍♂️
+
+    </div>
+
+    <div class="home-box">
+        <a href="Home.html">Home</a>
+    </div>
+
+</body>
+
+</html>
