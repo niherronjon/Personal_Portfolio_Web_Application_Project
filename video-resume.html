@@ -5,22 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Video Resume</title>
-    <link rel="stylesheet" href="video-resume.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0c0d;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #000000;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+            border: 2px solid #fff;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+        
+        .divider {
+            height: 2px;
+            background-color: #ffffff;
+            margin: 20px 0;
+            box-shadow: 0 0 10px white;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border: 2px solid white;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+        
+        .back {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .back a {
+            display: inline-block;
+            padding: 12px 30px;
+            color: #ff0a0a;
+            background-color: transparent;
+            border: 2px solid #ff0303;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 6px 10px rgb(255, 255, 255);
+        }
+        
+        .back a:hover {
+            background-color: #ff1111;
+            color: #000;
+            box-shadow: 0 0 20px rgb(255, 14, 14);
+        }
+        
+        @media (max-width: 768px) {
+            p {
+                font-size: 16px;
+            }
+            .back a {
+                padding: 10px 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+
     <div class="container">
         <h1>My Video Resume</h1>
         <div class="divider"></div>
+
         <p>Hello, I'm Niher Ronjon, a passionate Software Engineering student. In this video, I share my academic journey, skills, and career goals. Feel free to watch and learn more about me!</p>
+
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/zdxjNIvlLFI" allowfullscreen></iframe>
         </div>
+
         <div class="divider"></div>
+
         <div class="back">
             <a href="Home.html">⏪ Back to Home</a>
         </div>
     </div>
+
 </body>
 
 </html>
